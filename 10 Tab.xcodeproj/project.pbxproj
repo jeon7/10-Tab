@@ -13,6 +13,11 @@
 		8350216824636C26003B1F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8350216624636C26003B1F87 /* Main.storyboard */; };
 		8350216A24636C29003B1F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8350216924636C29003B1F87 /* Assets.xcassets */; };
 		8350216D24636C29003B1F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8350216B24636C29003B1F87 /* LaunchScreen.storyboard */; };
+		8350217624636E1A003B1F87 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350217424636E1A003B1F87 /* lamp_off.png */; };
+		8350217724636E1A003B1F87 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350217524636E1A003B1F87 /* lamp_on.png */; };
+		8350217924636ED1003B1F87 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350217824636ED0003B1F87 /* ImageViewController.swift */; };
+		8350217B24637029003B1F87 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350217A24637029003B1F87 /* DateViewController.swift */; };
+		8350217D246442C8003B1F87 /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350217C246442C7003B1F87 /* File.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8350216924636C29003B1F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8350216C24636C29003B1F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8350216E24636C29003B1F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8350217424636E1A003B1F87 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
+		8350217524636E1A003B1F87 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		8350217824636ED0003B1F87 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		8350217A24637029003B1F87 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		8350217C246442C7003B1F87 /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				8350216024636C26003B1F87 /* AppDelegate.swift */,
 				8350216224636C26003B1F87 /* SceneDelegate.swift */,
+				8350217A24637029003B1F87 /* DateViewController.swift */,
 				8350216424636C26003B1F87 /* ViewController.swift */,
+				8350217824636ED0003B1F87 /* ImageViewController.swift */,
 				8350216624636C26003B1F87 /* Main.storyboard */,
 				8350216924636C29003B1F87 /* Assets.xcassets */,
 				8350216B24636C29003B1F87 /* LaunchScreen.storyboard */,
 				8350216E24636C29003B1F87 /* Info.plist */,
+				8350217424636E1A003B1F87 /* lamp_off.png */,
+				8350217524636E1A003B1F87 /* lamp_on.png */,
+				8350217C246442C7003B1F87 /* File.png */,
 			);
 			path = "10 Tab";
 			sourceTree = "<group>";
@@ -127,7 +142,10 @@
 			files = (
 				8350216D24636C29003B1F87 /* LaunchScreen.storyboard in Resources */,
 				8350216A24636C29003B1F87 /* Assets.xcassets in Resources */,
+				8350217724636E1A003B1F87 /* lamp_on.png in Resources */,
+				8350217D246442C8003B1F87 /* File.png in Resources */,
 				8350216824636C26003B1F87 /* Main.storyboard in Resources */,
+				8350217624636E1A003B1F87 /* lamp_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8350217B24637029003B1F87 /* DateViewController.swift in Sources */,
 				8350216524636C26003B1F87 /* ViewController.swift in Sources */,
 				8350216124636C26003B1F87 /* AppDelegate.swift in Sources */,
+				8350217924636ED1003B1F87 /* ImageViewController.swift in Sources */,
 				8350216324636C26003B1F87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
