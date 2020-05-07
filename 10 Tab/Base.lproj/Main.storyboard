@@ -58,6 +58,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qPF-4W-uJX"/>
                         <segue destination="h7D-xS-96r" kind="relationship" relationship="viewControllers" id="kyK-Oz-oR2"/>
                         <segue destination="Lw3-Il-Jng" kind="relationship" relationship="viewControllers" id="h8D-IS-7VZ"/>
+                        <segue destination="RXO-dA-ilz" kind="relationship" relationship="viewControllers" id="bQR-CX-Ws2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTy-yU-PJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNZ-hi-0iH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="183"/>
+            <point key="canvasLocation" x="1652" y="-168"/>
         </scene>
         <!--Date Picker-->
         <scene sceneID="alm-wB-IUm">
@@ -154,9 +155,58 @@
             </objects>
             <point key="canvasLocation" x="841" y="578"/>
         </scene>
+        <!--Image Picker-->
+        <scene sceneID="tEf-rw-mRV">
+            <objects>
+                <viewController id="RXO-dA-ilz" customClass="ImagePickerViewController" customModule="_0_Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49p-4N-l3X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpi-Kq-WsX">
+                                <rect key="frame" x="0.0" y="127" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RXO-dA-ilz" id="Mfu-ac-WAx"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3we-HW-A37">
+                                <rect key="frame" x="20" y="437" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-sH-ITD">
+                                <rect key="frame" x="20" y="476" width="374" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcT-Wv-XIx">
+                                <rect key="frame" x="178" y="435" width="216" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="p0m-vX-8qS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image Picker" image="photo" catalog="system" id="lnH-bY-4fZ"/>
+                    <connections>
+                        <outlet property="PickerImage" destination="vpi-Kq-WsX" id="C2f-gh-laE"/>
+                        <outlet property="imageView" destination="9XX-sH-ITD" id="Ym9-71-xw9"/>
+                        <outlet property="lblImageFileName" destination="NcT-Wv-XIx" id="1kQ-hM-rNs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3L-go-tOr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="578"/>
+        </scene>
     </scenes>
     <resources>
         <image name="File.png" width="1280" height="1124"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="sun.min" catalog="system" width="128" height="121"/>
         <image name="timer" catalog="system" width="128" height="121"/>
     </resources>
